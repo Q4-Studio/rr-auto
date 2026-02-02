@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Auto - Vendita Auto Usate e Nuove</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/logo.jpg" alt="RR Auto Logo">
+                </a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servizi">Servizi</a></li>
+                    <li><a href="#chi-siamo">Chi Siamo</a></li>
+                    <li><a href="#auto">Le Nostre Auto</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Benvenuti da RR Auto</h1>
+            <p>La tua concessionaria di fiducia per auto nuove e usate.</p>
+            <a href="#auto" class="btn">Scopri le offerte</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servizi" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">I Nostri Servizi</h2>
+                <p class="section-subtitle">Diamo il massimo quando un cliente si rivolge a noi</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-tools service-icon"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Assistenza</h3>
+                        <p>Grazie a un'officina attrezzata, ti garantiamo un servizio di assistenza completa: tagliando,
+                            cambio olio, impianto elettrico, impianto frenante.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-tire service-icon"></i>
+                        <!-- Changed icon class to generic tire if available or use circle -->
+                    </div>
+                    <div class="service-content">
+                        <h3>Gommista</h3>
+                        <p>Forniamo un servizio completo di manutenzione e cambio gomme della tua auto, offrendoti
+                            un'ampia gamma di pneumatici.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-cogs service-icon"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ricambi Originali</h3>
+                        <p>Utilizziamo solo componenti originali, garantiti dall'esperienza e serietà dei marchi Ford e
+                            Motorcraft.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-key service-icon"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Consulenza Acquisto</h3>
+                        <p>Vuoi cambiare la tua auto? Grazie al servizio di assistenza pre e post vendita, sapremo
+                            consigliarti il modello adatto.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-clipboard-list service-icon"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Servizio Revisioni</h3>
+                        <p>Offriamo un efficiente servizio di pre-revisione e revisione ministeriale su tutte le
+                            vetture.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-steering-wheel service-icon"></i> <!-- Check icon availability -->
+                    </div>
+                    <div class="service-content">
+                        <h3>Accessori</h3>
+                        <p>Disponiamo di ogni accessorio necessario per dare al tuo veicolo un tocco di eleganza e
+                            funzionalità.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="chi-siamo" class="about">
+        <div class="container about-container">
+            <div class="about-title-col">
+                <h2>CHI<br>SIAMO</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-text-col">
+                <p>RR Auto nasce dalla passione per le automobili e dall'esperienza pluriennale nel settore. Il nostro
+                    obiettivo è offrire ai clienti un servizio trasparente, affidabile e di alta qualità.</p>
+                <br>
+                <p>Selezioniamo accuratamente ogni veicolo per garantire sicurezza e prestazioni. Il nostro team è a
+                    vostra disposizione per guidarvi nella scelta dell'auto perfetta per le vostre esigenze.</p>
+            </div>
+            <div class="about-image-col">
+                <img src="https://images.unsplash.com/photo-1562519819-016930ada31b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Concessionaria">
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Listings (Autosupermarket Embed) -->
+    <section id="auto" class="listings">
+        <div class="container">
+            <h2 class="section-title">Le Nostre Auto</h2>
+            <iframe src="https://autosupermarket.it/concessionari/r-r-auto-s-r-l" class="embed-container"
+                title="Lista Auto"></iframe>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contatti" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contatti</h2>
+            <div class="footer-content" style="color: var(--text-color); text-align: center;">
+                <!-- Simplified contact for now, can be expanded -->
+                <div>
+                    <h3>Vieni a trovarci</h3>
+                    <p>Via Esempio, 123<br>00100 Roma (RM)</p>
+                </div>
+                <div>
+                    <h3>Chiamaci</h3>
+                    <p>+39 012 3456789</p>
+                </div>
+                <div>
+                    <h3>Scrivici</h3>
+                    <p>info@rrauto.it</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>RR Auto</h3>
+                    <p>La tua scelta sicura per l'acquisto di auto.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Link Rapidi</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#servizi">Servizi</a></li>
+                        <li><a href="#auto">Auto</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Seguici</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div
+                style="text-align: center; margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+                <p>&copy; 2025 RR Auto. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
