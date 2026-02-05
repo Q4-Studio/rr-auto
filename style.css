@@ -377,6 +377,111 @@ section {
     transform: scale(1.05);
 }
 
+/* Testimonials */
+.testimonials {
+    background: linear-gradient(180deg, var(--bg-white) 0%, var(--bg-light) 100%);
+    padding: 6rem 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.testimonial-card {
+    background: var(--bg-white);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(6, 182, 212, 0.12);
+}
+
+.quote-icon {
+    font-size: 50px;
+    color: var(--accent-cyan);
+    opacity: 0.15;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover .quote-icon {
+    transform: scale(1.05);
+    opacity: 0.2;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.reviewer-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--bg-white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.testimonial-card:nth-child(1) .reviewer-avatar {
+    background: linear-gradient(135deg, #06B6D4, #1E3A8A);
+}
+
+.testimonial-card:nth-child(2) .reviewer-avatar {
+    background: linear-gradient(135deg, #FB923C, #EA580C);
+}
+
+.testimonial-card:nth-child(3) .reviewer-avatar {
+    background: linear-gradient(135deg, #8B5CF6, #6366F1);
+}
+
+.reviewer-info {
+    flex: 1;
+}
+
+.reviewer-name {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--primary-dark);
+    margin: 0;
+}
+
+.rating {
+    display: flex;
+    gap: 4px;
+    margin-top: 6px;
+}
+
+.rating i {
+    color: #FFD700;
+    font-size: 1rem;
+}
+
+.review-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-medium);
+    margin: 1.5rem 0 0;
+    font-style: italic;
+}
+
 /* Autosupermarket Embed */
 .listings {
     background: linear-gradient(180deg, var(--bg-white) 0%, var(--bg-light) 100%);
@@ -585,6 +690,10 @@ footer {
 
     .services-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
     }
 }
 
