@@ -7,4 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
             navList.classList.toggle('active');
         });
     }
+
+    // Anno dinamico nel footer
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 });
