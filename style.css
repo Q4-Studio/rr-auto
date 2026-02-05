@@ -750,11 +750,6 @@ footer {
         gap: 2rem;
     }
 
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
     .about-image-col {
         height: 300px;
     }
